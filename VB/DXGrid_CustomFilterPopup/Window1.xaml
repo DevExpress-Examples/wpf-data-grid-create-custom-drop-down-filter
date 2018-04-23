@@ -1,0 +1,21 @@
+﻿<Window x:Class="DXGrid_CustomFilterPopup.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" xmlns:local="clr-namespace:DXGrid_CustomFilterPopup" Title="Window1" Height="300" Width="423">
+    <Grid>
+        <dxg:GridControl x:Name="grid">
+            <dxg:GridControl.Columns>
+                <dxg:GridColumn FieldName="Index" FilterPopupMode="Custom">
+                    <dxg:GridColumn.CustomColumnFilterPopupTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                            <Label Content="Minimum Index:" Margin="3" />
+                            <Slider Minimum="1" Maximum="99" Width="200" Margin="3" Value="{Binding Path=CustomColumnFilter, RelativeSource={RelativeSource TemplatedParent}, Converter={local:IntToCriteriaOperatorConverter}}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </dxg:GridColumn.CustomColumnFilterPopupTemplate>
+                </dxg:GridColumn>
+            </dxg:GridControl.Columns>
+            <dxg:GridControl.View>
+                <dxg:TableView AutoWidth="True" />
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+    </Grid>
+</Window>
