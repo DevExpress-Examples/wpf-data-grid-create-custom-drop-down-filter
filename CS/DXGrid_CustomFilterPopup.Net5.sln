@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXGrid_CustomFilterPopup", "DXGrid_CustomFilterPopup\DXGrid_CustomFilterPopup.csproj", "{E8E622C5-5600-49AA-82EB-EB0D96A49D84}"
+# Visual Studio 16
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXGrid_CustomFilterPopup", "DXGrid_CustomFilterPopup\DXGrid_CustomFilterPopup.Net5.csproj", "{E8E622C5-5600-49AA-82EB-EB0D96A49D84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
