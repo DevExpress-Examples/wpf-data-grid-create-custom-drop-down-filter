@@ -1,5 +1,4 @@
-﻿Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports System.Windows
 Imports System.Windows.Data
@@ -10,6 +9,7 @@ Imports DevExpress.Data.Filtering
 Namespace DXGrid_CustomFilterPopup
 	Partial Public Class Window1
 		Inherits Window
+
 		Public Sub New()
 			InitializeComponent()
 			grid.ItemsSource = GridData.GetData()
@@ -25,19 +25,12 @@ Namespace DXGrid_CustomFilterPopup
 		End Function
 	End Class
 	Public Class DataObject
-		Private privateIndex As Integer
 		Public Property Index() As Integer
-			Get
-				Return privateIndex
-			End Get
-			Set(ByVal value As Integer)
-				privateIndex = value
-			End Set
-		End Property
 	End Class
 	Public Class IntToCriteriaOperatorConverter
 		Inherits MarkupExtension
 		Implements IValueConverter
+
 		Public Overrides Function ProvideValue(ByVal serviceProvider As IServiceProvider) As Object
 			Return Me
 		End Function
@@ -50,7 +43,7 @@ Namespace DXGrid_CustomFilterPopup
 			Dim operandValue As OperandValue = TryCast(op.RightOperand, OperandValue)
 			Return operandValue.Value
 		End Function
-		Private Function ConvertBack(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As System.Globalization.CultureInfo) As Object Implements IValueConverter.ConvertBack
+		Private Function IValueConverter_ConvertBack(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As System.Globalization.CultureInfo) As Object Implements IValueConverter.ConvertBack
 			Return New BinaryOperator("Index", Convert.ToInt32(value), BinaryOperatorType.Greater)
 		End Function
 		#End Region
