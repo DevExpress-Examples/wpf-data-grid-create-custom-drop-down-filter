@@ -12,7 +12,7 @@ This example demonstrates how to create a custom drop-down filter for the **Inde
 
 ![image](https://user-images.githubusercontent.com/65009440/174805719-a82cbb1a-db77-4678-8700-afd7df6fc49d.png)
 
-You can use the **GetUniqueColumnValues** method if you need to get all unique values in a column:
+You can use the **GetUniqueColumnValues** method if you need to obtain all unique values within a column:
 
 ```cs
 var filterItems = grid.DataController.FilterHelper.GetUniqueColumnValues(columnInfo, -1, true, false, null);
