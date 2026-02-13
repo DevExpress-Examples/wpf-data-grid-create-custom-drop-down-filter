@@ -39,7 +39,7 @@ var filterItems = grid.DataController.FilterHelper.GetUniqueColumnValues(columnI
 * [WPF Data Grid - Customize Items in a Column's Drop-down Filter](https://github.com/DevExpress-Examples/how-to-customize-filter-items-within-a-columns-filter-dropdown-e1533)
 * [WPF Data Grid - Apply a Custom Filter Condition](https://github.com/DevExpress-Examples/how-to-implement-custom-filtering-e1167)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-create-custom-drop-down-filter&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-create-custom-drop-down-filter&~~~was_helpful=no)
 
